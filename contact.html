@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.875em;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="contact.php" method="post" id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <div id="nameError" class="error-message">Name is required.</div>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+        <div id="emailError" class="error-message">Please enter a valid email address.</div>
+        <br>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" required></textarea>
+        <div id="messageError" class="error-message">Message cannot be empty.</div>
+        <br>
+        <input type="submit" value="send">
+    </form>
+
+    <script src="contact.js"></script>
+</body>
+</html>

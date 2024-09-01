@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.875em;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="login.php" method="post" id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <div id="usernameError" class="error-message">Username is required.</div>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <div id="passwordError" class="error-message">Password is required.</div>
+        <br>
+        <input type="submit" value="Login">
+    </form>
+
+    <script src="login.js"></script>
+</body>
+</html>
